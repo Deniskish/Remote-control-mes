@@ -1,0 +1,24 @@
+/*.txt
+node_modules/
+.github/
+.vscode/
+docs/
+.git
+.gitignore
+.gitlab-ci.yml
+*.bat
+*.sln
+*.njsproj
+*.md
+examples
+tests
+
+# MyCenter deployment secrets and generated artifacts must never enter an image.
+.env
+**/.env
+**/.env.*
+!deploy/.env.example
+deploy/config.json
+deploy/.runtime/
+*.bundle
+*.bundle.sha256
